@@ -32,7 +32,6 @@ private:
 
 private:
     SettingsMenu *menu = nullptr;
-    QPushButton *settingsBtn = nullptr;
     bool isConnected = false;
     QLabel *connStatus = nullptr;
     QLabel *connDesc = nullptr;

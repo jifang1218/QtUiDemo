@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
     sysIcon->show();
 
     // hide itself
-    hide();
+    //hide();
     showMainPanel();
 }
 

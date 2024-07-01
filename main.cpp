@@ -1,6 +1,9 @@
 #include "mainwindow.h"
-
 #include <QApplication>
+#include <QFile>
+#include <QDebug>
+#include <QTextDocument>
+#include <QTextCursor>
 
 int main(int argc, char *argv[])
 {

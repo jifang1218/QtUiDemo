@@ -46,7 +46,7 @@ void MainPanel::constructUi() {
     hbox->addWidget(feedbackBtn);
 
     QIcon settingsIcon = QIcon(":1.png");
-    settingsBtn = new QPushButton(settingsIcon, "", this);
+    QPushButton *settingsBtn = new QPushButton(settingsIcon, "", this);
     connect(settingsBtn, &QPushButton::pressed, this, &MainPanel::showMenu);
     hbox->addWidget(settingsBtn);
 
@@ -96,6 +96,7 @@ void MainPanel::showMenu() {
         menu = new SettingsMenu(this);
     }
 
+    QPushButton *settingsBtn = static_cast<QPushButton *>(sender());
     QRect rect = settingsBtn->geometry();
     QPoint pos = mapToGlobal(rect.topLeft());
 
